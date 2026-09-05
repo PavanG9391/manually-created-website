@@ -1,0 +1,4 @@
+/* The app shell is keeping the viewport height filled. */
+.App{
+  min-height:100vh;
+}

@@ -1,0 +1,42 @@
+/* The global reset is keeping spacing and box sizing steady. */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* Smooth scrolling is staying active for in-page movement. */
+html{
+  scroll-behavior:smooth;
+}
+
+/* The shared body style is setting the baseline typography. */
+body{
+  font-family: "Poppins", sans-serif;
+  background:#f8fafc;
+  color:#1e293b;
+  line-height:1.6;
+}
+
+/* Links are inheriting surrounding color so the look is staying clean. */
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* Images are scaling responsively without extra overflow. */
+img{
+  max-width:100%;
+  display:block;
+}
+
+/* Buttons are keeping the inherited font and pointer feel. */
+button{
+  font-family:inherit;
+  cursor:pointer;
+}
+
+/* Lists are dropping the default bullets so components can style them. */
+ul{
+  list-style:none;
+}

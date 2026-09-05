@@ -1,0 +1,175 @@
+.contact-page {
+    width: 100%;
+}
+
+/* The contact header is centering the intro and the page title. */
+.contact-header {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contact-header h1 {
+    font-size: 2.8rem;
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+.contact-header p {
+    color: #64748b;
+    line-height: 1.8;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px 70px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+}
+
+.contact-info {
+    background: #f8fafc;
+    padding: 35px;
+    border-radius: 12px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    margin-bottom: 30px;
+    color: #0f172a;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.icon {
+    color: #2563eb;
+    font-size: 22px;
+    margin-top: 4px;
+}
+
+.info-item h4 {
+    margin-bottom: 6px;
+    color: #0f172a;
+}
+
+.info-item p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2563eb;
+}
+
+.contact-form button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #1d4ed8;
+}
+
+.form-success {
+    margin-top: 18px;
+    color: #15803d;
+    font-weight: 500;
+}
+
+.map-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px 80px;
+}
+
+.map-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0f172a;
+}
+
+.map-section img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 992px) {
+
+.contact-container {
+    grid-template-columns: 1fr;
+}
+
+}
+
+@media (max-width: 768px) {
+
+.contact-header h1 {
+    font-size: 2.2rem;
+}
+
+.contact-container,
+.map-section {
+    padding: 20px;
+}
+
+.contact-info,
+.contact-form {
+    padding: 25px;
+}
+
+.contact-header h1 {
+    font-size: 2rem;
+}
+
+}

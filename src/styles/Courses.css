@@ -1,0 +1,52 @@
+/* The courses page is arranging the catalogue in a flexible grid. */
+.courses-page{
+    width:100%;
+}
+
+.courses-header{
+    max-width:1000px;
+    margin:60px auto 40px;
+    padding:0 20px;
+    text-align:center;
+}
+
+.courses-header h1{
+    font-size:2.8rem;
+    color:#0f172a;
+    margin-bottom:20px;
+}
+
+.courses-header p{
+    color:#64748b;
+    line-height:1.8;
+    font-size:1.05rem;
+}
+
+.courses-container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px 30px 80px;
+}
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+@media(max-width:768px){
+
+.courses-header h1{
+    font-size:2.2rem;
+}
+
+.courses-container{
+    padding:20px;
+}
+
+.course-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+}

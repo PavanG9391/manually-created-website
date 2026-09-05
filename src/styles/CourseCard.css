@@ -1,0 +1,96 @@
+/* The course card is keeping the image, summary, and link together. */
+.course-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+}
+
+.course-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 22px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.course-content h3 {
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.course-instructor {
+    color: #475569;
+    margin-bottom: 12px;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.course-description {
+    color: #475569;
+    line-height: 1.7;
+
+    flex: 1;          /* Takes remaining space */
+    margin-bottom: 25px;
+}
+
+.course-btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+
+    align-self: flex-start;   /* Keeps button on left */
+}
+
+.course-btn:hover {
+    background: #1d4ed8;
+}
+
+@media (max-width:768px){
+
+.course-image{
+    height:200px;
+}
+
+.course-content{
+    padding:18px;
+}
+
+.course-info{
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.course-btn{
+    width: 100%;
+    text-align: center;
+    align-self: stretch;
+}
+
+}

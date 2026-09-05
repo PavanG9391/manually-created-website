@@ -1,0 +1,124 @@
+/* The course detail page is using the same card language as the rest. */
+.course-details{
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+.course-banner img{
+    width:100%;
+    display:block;
+    border-radius:15px;
+    margin-bottom:40px;
+}
+
+.course-content h1{
+    font-size:2.8rem;
+    color:#0f172a;
+    margin-bottom:20px;
+}
+
+.course-description{
+    font-size:1.05rem;
+    line-height:1.8;
+    color:#475569;
+    margin-bottom:40px;
+}
+
+.course-info{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:50px;
+}
+
+.info-card{
+    background:#f8fafc;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.course-section{
+    margin-bottom:40px;
+}
+
+.course-section h2{
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.course-section p,
+.course-section li{
+    color:#475569;
+    line-height:1.8;
+}
+
+.course-section ul,
+.course-section ol{
+    padding-left:20px;
+}
+
+.enroll-btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.enroll-btn:hover{
+    background:#1d4ed8;
+}
+
+@media(max-width:768px){
+
+.course-details{
+    margin:30px auto;
+    padding:0 16px;
+}
+
+.course-info{
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.course-content h1{
+    font-size:2.2rem;
+}
+
+.course-banner img{
+    margin-bottom:28px;
+}
+
+}
+
+@media(max-width:576px){
+
+.course-info{
+    grid-template-columns:1fr;
+}
+
+.course-content h1{
+    font-size:1.9rem;
+}
+
+.course-description{
+    font-size:1rem;
+}
+
+.course-section ul,
+.course-section ol{
+    padding-left:18px;
+}
+
+}

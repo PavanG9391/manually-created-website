@@ -1,0 +1,131 @@
+.hero-banner{
+    width:100%;
+    height:90vh;
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    position:relative;
+}
+
+/* The overlay is holding the action buttons over the banner image. */
+.hero-buttons-overlay{
+    position: absolute;
+
+    /* Adjust these values */
+    left: 85px;
+    top: 580px;
+
+    display: flex;
+    gap: 20px;
+    z-index: 10;
+}
+
+.primary-btn{
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+
+    padding:16px 34px;
+    border-radius:8px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.primary-btn:hover{
+    background:#1d4ed8;
+}
+
+.secondary-btn{
+    border:2px solid #2563eb;
+    color: #2563eb;
+    text-decoration:none;
+
+    padding:16px 34px;
+    border-radius:8px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.secondary-btn:hover{
+     background: rgb(88, 164, 250);
+}
+
+@media(max-width:768px){
+
+.hero-banner{
+    height:20vh;
+    background-position:center top;
+}
+
+.hero-buttons-overlay{
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 22px;
+    width: calc(100% - 32px);
+    display: flex;
+    gap: 12px;
+    z-index: 10;
+}
+
+}
+
+@media (max-width: 992px) {
+
+.hero-banner{
+    height: auto;
+    min-height: unset;
+    aspect-ratio: 1717 / 916;
+    background-size: contain;
+    background-position: center top;
+    background-color: #fff;
+}
+
+.hero-buttons-overlay{
+    left: 50%;
+    transform: translateX(-50%);
+    top: auto;
+    bottom: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: calc(100% - 40px);
+}
+
+.primary-btn,
+.secondary-btn{
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+}
+
+@media (max-width: 576px) {
+
+.hero-banner{
+    width: 100%;
+}
+
+.hero-buttons-overlay{
+    bottom: 12px;
+    width: calc(100% - 24px);
+    gap: 10px;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.primary-btn,
+.secondary-btn{
+    width: auto;
+    min-width: 160px;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    padding: 10px 16px;
+    font-size: 13px;
+}
+
+}
