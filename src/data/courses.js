@@ -1,9 +1,10 @@
+const BASE_URL = import.meta.env.BASE_URL;
 export const courses = [
   {
     // The AI course is powering the first card and detail page entry.
     id: "ai",
-    banner: "/images/banner-ai.png",
-    image: "/images/course-ai.jpg",
+    banner: `${BASE_URL}images/banner-ai.png`,
+    image: `${BASE_URL}images/course-ai.jpg`,
     title: "Artificial Intelligence",
     tag: "Technology Course",
     instructor: "Dr. James Wilson",
@@ -44,8 +45,8 @@ export const courses = [
   {
     // The data science course is following the same content structure.
     id: "data-science",
-    banner: "/images/banner-data.png",
-    image: "/images/course-data.jpg",
+    banner: `${BASE_URL}images/banner-data.png`,
+    image: `${BASE_URL}images/course-data.jpg`,
     title: "Data Science",
     tag: "Data & Analytics Course",
     instructor: "Prof. Sarah Lee",
@@ -85,8 +86,8 @@ export const courses = [
   {
     // The business course is carrying its own banner and summary text.
     id: "business",
-    banner: "/images/banner-business.png",
-    image: "/images/course-buisness.jpg",
+    banner: `${BASE_URL}images/banner-business.png`,
+    image: `${BASE_URL}images/course-buisness.jpg`,
     title: "Business Management",
     tag: "Business Course",
     instructor: "Dr. Michael Brown",
@@ -126,8 +127,8 @@ export const courses = [
   {
     // The design course is keeping the reusable data shape in place.
     id: "design",
-    banner: "/images/banner-design.png",
-    image: "/images/course-design.jpg",
+    banner: `${BASE_URL}images/banner-design.png`,
+    image: `${BASE_URL}images/course-design.jpg`,
     title: "UI/UX Design",
     tag: "Design Course",
     instructor: "Emma Johnson",
@@ -167,8 +168,8 @@ export const courses = [
   {
     // The cyber security course is staying aligned with the other entries.
     id: "cyber-security",
-    banner: "/images/banner-security.png",
-    image: "/images/course-cyber.jpg",
+    banner: `${BASE_URL}images/banner-security.png`,
+    image: `${BASE_URL}images/course-cyber.jpg`,
     title: "Cyber Security",
     tag: "Security Course",
     instructor: "David Carter",
@@ -208,8 +209,8 @@ export const courses = [
   {
     // The project management course is using the shared course model too.
     id: "project-management",
-    banner: "/images/banner-project.png",
-    image: "/images/course-project.jpg",
+    banner: `${BASE_URL}images/banner-project.png`,
+    image: `${BASE_URL}images/course-project.jpg`,
     title: "Project Management",
     tag: "Management Course",
     instructor: "Sophia Turner",
@@ -249,8 +250,8 @@ export const courses = [
   {
     // The research course is closing the list with the same fields.
     id: "research",
-    banner: "/images/banner-research.png",
-    image: "/images/course-research.jpg",
+    banner: `${BASE_URL}images/banner-research.png`,
+    image: `${BASE_URL}images/course-research.jpg`,
     title: "Research Methodology",
     tag: "Research Course",
     instructor: "Dr. Olivia Smith",

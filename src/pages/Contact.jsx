@@ -72,7 +72,7 @@ function Contact() {
         <h2>Our Location</h2>
 
         <img
-          src="/images/map-placeholder.png"
+          src={`${import.meta.env.BASE_URL}images/map-placeholder.png`}
           alt="Map showing the location of ScholarSphere"
         />
 

@@ -14,7 +14,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/manually-created-website">
       {/* The shared navbar is staying above all page routes. */}
       <Navbar />
 

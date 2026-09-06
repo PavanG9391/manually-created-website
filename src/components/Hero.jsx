@@ -6,7 +6,7 @@ function Hero() {
     <section
       className="hero-banner"
       style={{
-        backgroundImage: "url('/images/hero-education.png')",
+        backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-education.png)`,
       }}
     >
       {/* The hero banner is holding the primary call to action. */}
