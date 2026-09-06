@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 
 import { getCourseById } from "../data/courses";
@@ -6,6 +7,8 @@ import "../styles/CourseDetails.css";
 function CourseDetails() {
   const { id } = useParams();
   const course = getCourseById(id);
+
+  const [enrolled, setEnrolled] = useState(false);
 
   if (!course) {
     return (
@@ -94,10 +97,19 @@ function CourseDetails() {
           <p>{course.prerequisites}</p>
         </section>
 
-        {/* The enrol button is moving users to the contact page. */}
-        <button className="enroll-btn">
-          Enrol Now
-        </button>
+        
+        <button
+  className="enroll-btn"
+  onClick={() => setEnrolled(true)}
+>
+  Enrol Now
+</button>
+
+{enrolled && (
+  <p className="enrollment-message">
+    Your enrolment request has been submitted successfully.
+  </p>
+)}
       </div>
     </div>
   )
